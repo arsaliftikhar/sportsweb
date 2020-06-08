@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Home</title>
+    <link rel="icon" href="material/Logo/Logo.png">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="validation.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<script>
+
+    //jquery code start form here if you want to check its function then just uncomment this
+
+
+
+
+    /*
+    $(document).ready(function () {
+        $('#submit').click(function (e) {
+            if($('#std-name').val()=='')
+            {
+                $("#std-name").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#std-roll').val()=='')
+            {
+                $("#std-roll").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#std-dep').val()=='')
+            {
+                $("#std-dep").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#std-prog').val()=='')
+            {
+                $("#std-prog").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#email').val()=='')
+            {
+                $("#email").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#pass').val()=='')
+            {
+                $("#pass").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#cpass').val()=='')
+            {
+                $("#cpass").css("border", "1px solid red");
+                e.preventDefault();
+            }
+            if($('#pass').val()!=$('#cpass').val())
+            {
+                alert('Password Not Match');
+            }
+            if($('#cricket'). is(":not(:checked)")
+                && $('#baseball'). is(":not(:checked)")
+                && $('#snoker'). is(":not(:checked)")
+                && $('#badminton'). is(":not(:checked)")
+                && $('#kabbadi'). is(":not(:checked)")
+            )
+            {
+                alert('Please Select Game Type');
+            }
+            if($('#male'). is(":not(:checked)") &&$('#female'). is(":not(:checked)"))
+            {
+                alert('Select Gender');
+            }
+            if($('#game-indoor'). is(":not(:checked)") &&$('#game-outdoor'). is(":not(:checked)"))
+            {
+                alert('Select Indoor Or Outdoor');
+            }
+
+            /!*keyup functions*!/
+
+            if($('#std-name').keyup(function () {
+                $('#std-name').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#std-roll').keyup(function () {
+                $('#std-roll').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#std-dep').mouseenter(function () {
+                $('#std-dep').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#std-prog').mouseenter(function () {
+                $('#std-prog').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#email').keyup(function () {
+                $('#email').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#pass').keyup(function () {
+                $('#pass').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+            if($('#cpass').keyup(function () {
+                $('#cpass').css('border','1px solid grey');
+                e.preventDefault();
+            }));
+        })
+    })
+*/
+
+</script>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><img src="material/Logo/logo-white.png" alt=""></label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+</nav>
+<!--body part-->
+<div class="body-part">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" onsubmit="return myFunction()">
+        <div class="form-left">
+            <h2>Register Here</h2>
+            <br>
+            <br>
+            <label for="std-name">Student Name</label>
+            <br>
+            <input id="std-name" title="Only Alphabets" placeholder="Enter your name" pattern="[A-Za-z]*" onkeyup="this.style.border='1px solid grey'" type="text">
+            <br>
+            <br>
+            <label for="">Gender</label>
+            <br>
+            <span>Male</span> <input id="male" name="gender" type="radio">
+            <span>Female</span> <input id="female" name="gender" type="radio">
+            <br>
+            <br>
+            <label for="std-roll">Roll No</label>
+            <br>
+            <input placeholder="Enter roll no" title="Eample: 17-uglc-417" pattern="[0-9]{2}-[A-Za-z]{3}-[0-9]{3}" id="std-roll" onkeyup="this.style.border='1px solid grey'" type="text">
+            <br>
+            <br>
+            <label for="std-dep">Select Department</label>
+            <br>
+            <select name="" onchange="random()" onmouseleave="this.style.border='1px solid grey'" id="std-dep">
+                <option value="" hidden>Select</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Food Science">Food Science</option>
+                <option value="English">English</option>
+            </select>
+            <br>
+            <br>
+            <label for="std-prog">Select Program</label>
+            <br>
+            <select name="" onmouseleave="this.style.border='1px solid grey'"  id="std-prog">
+                <option value="" hidden>Null</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Select Type</label>
+            <br>
+            <span>Indoor</span> <input id="game-indoor" name="game-type" type="radio">
+            <span>Outdoor</span> <input id="game-outdoor"  name="game-type" type="radio">
+            <br>
+            <br>
+            <label for="">Game Type</label>
+            <br>
+            <span>Cricket</span> <input id="cricket" type="checkbox">
+            <span>Basket Ball</span> <input id="baseball" type="checkbox">
+            <span>Snoker</span> <input id="snoker" type="checkbox">
+            <br>
+            <span>Badminton</span> <input id="badminton" type="checkbox">
+            <span>Kabbadi</span> <input id="kabbadi" type="checkbox">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input onkeyup="this.style.border='1px solid grey'" id="email" type="email">
+            <br>
+            <br>
+            <label for="pass">Password</label>
+            <br>
+            <input onkeyup="this.style.border='1px solid grey'" id="pass" maxlength="7" type="password">
+            <br>
+            <br>
+            <label for="cpass">Confirm Password</label>
+            <br>
+            <input onkeyup="this.style.border='1px solid grey'" id="cpass" maxlength="7" type="password">
+            <br>
+            <br>
+            <input type="reset">
+            <input id="submit" type="submit">
+            <br>
+            <br>
+            <a id="already" href="login.html">Already Account?</a>
+        </div>
+
+    </form>
+    <br>
+
+</div>
+<!--footer-->
+<div class="footer">
+    © Copyright 2020 All rights Are Reserved By Arsal Knowledge
+</div>
+
+</body>
+</html>

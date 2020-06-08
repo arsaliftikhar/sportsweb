@@ -1,0 +1,87 @@
+#main-body
+{
+    height: 550px;
+}
+form
+{
+    margin-left: 30%;
+    float: left;
+    transition: 0.5s;
+}
+form label
+{
+    font-size: 24px;
+}
+form input[type=text]
+{
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+}
+form input[type=submit]
+{
+    background: #2C3E50;
+    color: white;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 190px;
+}
+form input[type=submit]:hover
+{
+    background: #597298;
+}
+form input[type=submit]:focus
+{
+    outline: none;
+}
+.social
+{
+    height: 200px;
+
+    margin-left: 65%;
+}
+.social i
+{
+    font-size: 28px;
+    transition: 0.5s;
+}
+.facebook
+{
+    color: 	#3b5998;
+}
+.twitter
+{
+    color: 	#55acee;
+}
+.instagram
+{
+    color: #9b7e0e;
+}
+.youtube
+{
+    color: #c4302b;
+}
+.social a:hover
+{
+    background: none;
+}
+.social i:hover
+{
+    font-size: 38px;
+    transition: 0.5s;
+}
+.social p i
+{
+    font-size: 16px;
+}
+@media (max-width: 858px)
+{
+    form
+    {
+        margin-left: 10%;
+        transition: 0.5s;
+    }
+}

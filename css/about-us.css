@@ -1,0 +1,30 @@
+#main-body
+{
+
+}
+.content
+{
+    padding: 100px;
+    text-align: justify;
+}
+.content ul li
+{
+    margin-left: 20px;
+    list-style: decimal;
+}
+.game-types
+{
+    width: 300px;
+    float: left;
+}
+@media (max-width: 858px)
+{
+    .game-types
+    {
+        float: none;
+    }
+    .img-area img
+    {
+        width: 350px;
+    }
+}

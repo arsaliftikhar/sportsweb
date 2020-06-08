@@ -1,0 +1,60 @@
+.form-left
+{
+    width: 40%;
+    margin-left: 40%;
+    transition: 0.5s;
+}
+form h2
+{
+    margin-left: 50px;
+}
+form label
+{
+    font-size: 22px;
+
+}
+form input[type=text],input[type=password],input[type=email]
+{
+    width:300px;
+    height: 30px;
+    font-size: 18px;
+}
+form select
+{
+    width: 300px;
+    font-size: 18px;
+}
+form span
+{
+    font-size: 18px;
+}
+form input[type=submit],input[type=reset]
+{
+    background: #2C3E50;
+    color: white;
+    font-size: 22px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form input[type=submit]:hover,input[type=reset]:hover
+{
+    background: #597298;
+}
+form input[type=submit]:focus,input[type=reset]:focus
+{
+    outline: none;
+}
+#already:hover
+{
+    background-color: white;
+}
+
+@media (max-width: 858px)
+{
+    .form-left{
+        margin-left: 25%;
+        transition: 0.5s;
+    }
+}
